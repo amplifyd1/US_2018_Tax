@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    US_2018_Tax (0.1.0)
+    US_2018_Tax (0.1.1)
 
 GEM
   remote: https://rubygems.org/
