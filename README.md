@@ -26,15 +26,15 @@ There are several functions of this calculator.
 To get the amount of tax to be paid, there are two options, one with a standard deduction and one without:
 
   ```ruby
-  US_2018_Tax::Tax.new(net_income: 100000).calculate
-  US_2018_Tax::Tax.new(net_income: 100000).calculate_with_standard_deduction
+  US_2018_Tax::Tax.new(<your_net_income>).calculate
+  US_2018_Tax::Tax.new(<your_net_income>).calculate_with_standard_deduction
   ```
 
 To get the amount of income after tax(gross income), there are two options as well:
 
   ```ruby
-  US_2018_Tax::Tax.new(net_income: 100000).gross_income
-  US_2018_Tax::Tax.new(net_income: 100000).gross_with_deduction
+  US_2018_Tax::Tax.new(<your_net_income>).gross_income
+  US_2018_Tax::Tax.new(<your_net_income>).gross_with_deduction
   ```
 
 ## Development
