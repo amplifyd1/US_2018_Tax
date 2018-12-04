@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Gem for generating federal tax amounts based on 2018 tax brackets}
 
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/amplifyd1/US_2018_Tax"
   spec.license       = "MIT"
 
 

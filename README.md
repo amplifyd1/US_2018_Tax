@@ -35,6 +35,7 @@ To get the amount of income after tax(gross income), there are two options as we
   ```ruby
   US_2018_Tax::Tax.new(net_income: 100000).gross_income
   US_2018_Tax::Tax.new(net_income: 100000).gross_with_deduction
+  ```
 
 ## Development
 
