@@ -9,10 +9,6 @@ module US_2018_Tax
       return calculate_tax(@net_income) if income_numeric?
     end
 
-    def gross_income
-      @net_income - calculate_tax
-    end
-
     def income_numeric?
       (@net_income.is_a? Numeric || @net_income.integer?)
     end
@@ -40,6 +36,10 @@ module US_2018_Tax
       standard_deduction = 12_000
       net_income = @net_income - standard_deduction
       calculate_tax(net_income) if income_numeric?
+    end
+
+    def gross_income
+      @net_income - calculate_tax(@net_income)
     end
 
     def gross_with_deduction
